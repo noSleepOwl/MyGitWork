@@ -1,14 +1,30 @@
 package com.cn.sleep.work.project;
 
 import com.cn.sleep.work.Origin;
-import com.cn.sleep.work.ProjectInterface;
+import com.cn.sleep.work.Project;
 
-public class JsonProject implements ProjectInterface {
+import java.util.ArrayList;
+import java.util.List;
+
+public class JsonProject implements Project {
 
     private String name;
     private String path;
-    private Origin origin;
+    private List<Origin> originList = new ArrayList<>();
 
+    private Boolean control;
+
+    public void setOriginList(List<Origin> originList) {
+        this.originList = originList;
+    }
+
+    public void addOrign(Origin origin) {
+        this.originList.add(origin);
+    }
+
+    public void setControl(Boolean control) {
+        this.control = control;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -20,18 +36,15 @@ public class JsonProject implements ProjectInterface {
 
 
     @Override
-    public Origin getOrigin() {
-        return origin;
+    public Boolean getControl() {
+        return control;
     }
 
     @Override
-    public Boolean control() {
-        return false;
+    public List getOriginList() {
+        return originList;
     }
 
-    public void setOrigin(Origin origin) {
-        this.origin = origin;
-    }
 
     @Override
     public String getName() {
@@ -43,5 +56,9 @@ public class JsonProject implements ProjectInterface {
         return path;
     }
 
-
+    @Override
+    public boolean equals(Object obj) {
+        Project project = (Project) obj;
+        return this.getName().equals(project.getName());
+    }
 }

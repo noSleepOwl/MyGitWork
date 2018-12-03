@@ -1,36 +1,44 @@
 package com.cn.sleep;
 
-import org.eclipse.jgit.lib.Config;
-import org.eclipse.jgit.lib.Repository;
+import com.cn.sleep.work.Origin;
+import com.cn.sleep.work.Project;
+import com.cn.sleep.work.project.JsonProjectTools;
+import org.eclipse.jgit.api.PullResult;
+import org.eclipse.jgit.diff.DiffEntry;
 
-import java.io.IOException;
-import java.util.Set;
+import java.util.List;
 
-/**
- * 1.项目git 地址,
- * 1.1.项目名称
- * 1.2.项目git地址
- * 2.工作目录
- * 2.1 项目本地目录
- * 3.1 项目中心仓库地址
- */
 public class Main {
-    public static final String gitDir = "E:\\intellijWorkSpace\\ICloudClassroomDev\\.git";
+    public static final String gitDir = "E:\\intellijWorkSpace\\My-Blog";
+    public static final String CONFIG_JSON = "E:\\intellijWorkSpace\\MyGitWork\\src\\main\\resources\\project.json";
+    public static final String MASTER = "master";
+    public static final String REMOTE_CENTER = "center";
+    public static final String REMOTE_ORIGIN = "origin";
 
     public static void main(String[] arg) {
-        try (Repository repository = RrpositoryTool.buildTool(gitDir)) {
-            Config storedConfig = repository.getConfig();
-            Set<String> remotes = storedConfig.getSubsections("remote");
-            for (String remoteName : remotes) {
-                String url = storedConfig.getString("remote", remoteName, "url");
-                System.out.println(remoteName + " " + url);
-            }
+        JsonProjectTools.searchProjectFromJson(CONFIG_JSON);
+        List<Project> projects = JsonProjectTools.build(CONFIG_JSON);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        projects.stream().filter(Project::getControl).forEach(project -> {
+            RrpositoryTool.openGit(project.getPath(), tool -> {
+                List<DiffEntry> entryList = tool.diff();
+                //本地无更改
+                if (entryList.size() == 0) {
+                    tool.checkout(MASTER);
+                    PullResult result = tool.pull(REMOTE_CENTER, MASTER);
+                    System.out.println(result.isSuccessful());
+                }
+            });
+        });
     }
 
+    private static String remote(Project project, String remoteName) {
+        return project.getOriginList()
+                .stream()
+                .filter(o -> o.getName().equals(remoteName))
+                .map(Origin::getUrl)
+                .findFirst()
+                .get();
+    }
 
 }
