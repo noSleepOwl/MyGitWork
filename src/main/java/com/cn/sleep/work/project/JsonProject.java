@@ -1,18 +1,14 @@
 package com.cn.sleep.work.project;
 
-import com.cn.sleep.work.GitStatus;
+import com.cn.sleep.work.Origin;
 import com.cn.sleep.work.ProjectInterface;
-
-import java.util.List;
-import java.util.Map;
 
 public class JsonProject implements ProjectInterface {
 
     private String name;
     private String path;
-    private List<Map<String, String>> origin;
-    private Boolean isGit;
-    private GitStatus gitStatus;
+    private Origin origin;
+
 
     public void setName(String name) {
         this.name = name;
@@ -22,20 +18,19 @@ public class JsonProject implements ProjectInterface {
         this.path = path;
     }
 
-    public void setOrigin(List<Map<String, String>> origin) {
+
+    @Override
+    public Origin getOrigin() {
+        return origin;
+    }
+
+    @Override
+    public Boolean control() {
+        return false;
+    }
+
+    public void setOrigin(Origin origin) {
         this.origin = origin;
-    }
-
-    public Boolean getGit() {
-        return isGit;
-    }
-
-    public void setGit(Boolean git) {
-        isGit = git;
-    }
-
-    public void setGitStatus(GitStatus gitStatus) {
-        this.gitStatus = gitStatus;
     }
 
     @Override
@@ -48,18 +43,5 @@ public class JsonProject implements ProjectInterface {
         return path;
     }
 
-    @Override
-    public List<Map<String, String>> getOrigin() {
-        return origin;
-    }
 
-    @Override
-    public Boolean isGit() {
-        return null;
-    }
-
-    @Override
-    public GitStatus getGitStatus() {
-        return gitStatus;
-    }
 }

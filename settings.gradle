@@ -1,2 +1,3 @@
 rootProject.name = 'jgit'
 
+include "git"

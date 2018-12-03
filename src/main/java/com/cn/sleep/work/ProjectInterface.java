@@ -20,16 +20,11 @@ public interface ProjectInterface {
     /**
      * 项目远程仓库地址
      */
-    List<Map<String, String>> getOrigin();
+    Origin getOrigin();
 
     /**
-     * 是否是一个git项目
+     * 在批量操作中是否执行
      */
-    Boolean isGit();
-
-    /**
-     * 项目的Git状态
-     */
-    GitStatus getGitStatus();
+    Boolean control();
 
 }

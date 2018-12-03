@@ -9,6 +9,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/git" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/git" />
+        <option name="gradleHome" value="D:/Program Files/gradle-4.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/git" />
           </set>
         </option>
       </GradleProjectSettings>

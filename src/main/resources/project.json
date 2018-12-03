@@ -1,12 +1,17 @@
 {
+  "workSpace": "C:/Users/Administrator/Desktop/git_test_work_space",
   "projects": [
     {
       "name": "myProject",
-      "path": "E:/development/AndroidStudio/android-architecture/.git",
+      "path": "/myProject",
       "origin": [
         {
-          "name": "adjklas",
+          "name": "origin",
           "url": "http:ppp"
+        },
+        {
+          "name": "center",
+          "url": ""
         }
       ]
     }
