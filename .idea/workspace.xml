@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2489bee3-5088-4459-b307-3c55ab329712" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/OriginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/GitMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/JavaFx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/LogFilterMyCommit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MainView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/sleep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/ProjectInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/sleep/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProjectBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProjectTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -103,24 +103,27 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
+          <entry key="CLASS" value="3" />
           <entry key="Groovy" value="14" />
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="114" />
           <entry key="JSON" value="14" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="320" />
-          <entry key="JAVA" value="5201" />
-          <entry key="JSON" value="98" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="8263" />
+          <entry key="JSON" value="109" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="XML" value="153" />
         </counts>
       </usages-collector>
     </session>
@@ -128,53 +131,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/JavaFx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="163">
+              <caret line="80" column="15" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/GitMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/diff/DiffEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="118" column="43" lean-forward="true" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
-              <folding>
-                <element signature="e#13087#13088#0" expanded="true" />
-                <element signature="e#13114#13115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/treewalk/TreeWalk.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="86" column="66" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/treewalk/AbstractTreeIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/attributes/Attribute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-416">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -182,51 +154,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="68" column="21" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="21" />
+            <state relative-caret-position="494">
+              <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1585#1586#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/PullCommand.java">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/control/ListView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="205" column="21" selection-start-line="205" selection-start-column="11" selection-end-line="205" selection-end-column="21" />
+            <state relative-caret-position="223">
+              <caret line="457" column="43" selection-start-line="457" selection-start-column="43" selection-end-line="457" selection-end-column="43" />
+              <folding>
+                <element signature="e#17232#17233#0" expanded="true" />
+                <element signature="e#17274#17275#0" expanded="true" />
+                <element signature="e#17765#17766#0" expanded="true" />
+                <element signature="e#17822#17823#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/CheckoutCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="201" column="14" selection-start-line="201" selection-start-column="11" selection-end-line="201" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/DiffCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/MainView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="26" />
+            <state relative-caret-position="434">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/project.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-            </state>
-          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -236,6 +207,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -249,6 +221,7 @@
       <find>jgit_test_</find>
       <find>true</find>
       <find>jgit_test_for</find>
+      <find>DEFAULT_EDIT_COMMIT_HANDLER</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -261,11 +234,13 @@
     <option name="myGradleHomes">
       <map>
         <entry key="$PROJECT_DIR$" value="D:\Program Files\gradle-4.8" />
+        <entry key="$PROJECT_DIR$/git" value="D:\Program Files\gradle-4.8" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
         <entry key="$PROJECT_DIR$" value="4.8" />
+        <entry key="$PROJECT_DIR$/git" value="4.8" />
       </map>
     </option>
     <option name="availableProjects">
@@ -823,11 +798,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProjectBuild.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/OriginModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/ProjectInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProjectTools.java" />
-        <option value="$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/LogFilterMyCommit.java" />
         <option value="$PROJECT_DIR$/src/main/resources/project.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/MainView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/MainView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/ProjectCell.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MainView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/JavaFx.java" />
+        <option value="$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cn/sleep/GitMain.java" />
       </list>
     </option>
   </component>
@@ -837,19 +819,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-253" />
     <option name="y" value="121" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -860,62 +843,6 @@
             <path>
               <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="git" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="sleep" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -957,6 +884,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="sleep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyGitWork" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="sleep" type="462c0819:PsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jgit" type="b2602c69:ProjectViewProjectNode" />
@@ -993,19 +931,25 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543829968413" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jgit-cookbook" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543994249818" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\intellijWorkSpace\MyGitWork\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1019,13 +963,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cn.sleep.Main" />
+  <component name="RunManager" selected="Application.JavaFx">
+    <configuration name="GitMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cn.sleep.GitMain" />
       <module name="jgit_main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cn.sleep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaFx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cn.sleep.Ui.JavaFx" />
+      <module name="jgit_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cn.sleep.Ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1070,13 +1027,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.GitMain" />
       <item itemvalue="Gradle.MyGitWork [build]" />
       <item itemvalue="Gradle.MyGitWork [run]" />
+      <item itemvalue="Application.JavaFx" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.JavaFx" />
+        <item itemvalue="Application.GitMain" />
         <item itemvalue="Gradle.MyGitWork [run]" />
         <item itemvalue="Gradle.MyGitWork [build]" />
       </list>
@@ -1093,30 +1052,64 @@
       <option name="presentableId" value="Default" />
       <updated>1543641762199</updated>
       <workItem from="1543641764186" duration="15732000" />
-      <workItem from="1543801142562" duration="24724000" />
+      <workItem from="1543801142562" duration="32547000" />
+      <workItem from="1543891416974" duration="10463000" />
+      <workItem from="1543982320637" duration="7252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40456000" />
+    <option name="totallyTimeSpent" value="65994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="CheckStyle" />
-      <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45227766" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17895879" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44251627" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.27548808" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CheckStyle" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.19722815" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17895879" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21908894" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1126,6 +1119,8 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="CheckStyle" order="13" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1133,43 +1128,10 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.19722815" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.19722815" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="9" visible="true" weight="0.3991323" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="PlantUML" order="0" />
-      <window_info anchor="right" id="Palette" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="right" id="Gradle" order="4" visible="true" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1203,164 +1165,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Class.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/reflect/Type.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.54/80d386a5c329aa46c9b994d1e277623bff6b26a9/fastjson-1.2.54-sources.jar!/com/alibaba/fastjson/TypeReference.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.54/80d386a5c329aa46c9b994d1e277623bff6b26a9/fastjson-1.2.54-sources.jar!/com/alibaba/fastjson/JSONObject.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.54/80d386a5c329aa46c9b994d1e277623bff6b26a9/fastjson-1.2.54-sources.jar!/com/alibaba/fastjson/JSONArray.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/AddCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/git/GitCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/revwalk/RevCommit.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/lib/Constants.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/lib/Ref.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/ListBranchCommand.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/concurrent/Callable.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/GitCommand.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/CommitCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/git/GitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/git/GitControllerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/git/BaseGitTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar!/sun/applet/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/workinterface/impl/WorkFlowImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="626" column="29" selection-start-line="626" selection-start-column="29" selection-end-line="626" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/GitStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/WorkFlowInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/workinterface/WorkFlowAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/Origin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/f270dbd1d792d5ad06074abe018a18644c90b60e/org.eclipse.jgit-5.1.3.201810200350-r.jar!/org/eclipse/jgit/util/FS_Win32.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#5789#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/f270dbd1d792d5ad06074abe018a18644c90b60e/org.eclipse.jgit-5.1.3.201810200350-r.jar!/org/eclipse/jgit/util/FS_Win32.class" />
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/src.zip!/java/nio/file/FileVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1396,17 +1201,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.54/80d386a5c329aa46c9b994d1e277623bff6b26a9/fastjson-1.2.54-sources.jar!/com/alibaba/fastjson/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="737" column="25" selection-start-line="737" selection-start-column="25" selection-end-line="737" selection-end-column="25" />
-          <folding>
-            <element signature="e#20876#20877#0" expanded="true" />
-            <element signature="e#20933#20934#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.54/80d386a5c329aa46c9b994d1e277623bff6b26a9/fastjson-1.2.54-sources.jar!/com/alibaba/fastjson/JSON.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/OriginModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1415,31 +1210,6 @@
             <element signature="e#202#203#0" expanded="true" />
             <element signature="e#234#235#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1455,85 +1225,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/DiffCommand.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/DiffCommand.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/attributes/Attribute.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/diff/DiffEntry.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/treewalk/TreeWalk.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/treewalk/AbstractTreeIterator.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/CheckoutCommand.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/PullCommand.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/PushCommand.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/revwalk/filter/RevFilter.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/revwalk/RevCommit.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/revwalk/FooterLine.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/Git.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/LogCommand.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/GitCommand.java" />
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/concurrent/Callable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/attributes/Attribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/diff/DiffEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="118" column="43" lean-forward="true" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
-          <folding>
-            <element signature="e#13087#13088#0" expanded="true" />
-            <element signature="e#13114#13115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/treewalk/TreeWalk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="86" column="66" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/treewalk/AbstractTreeIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/CheckoutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="201" column="14" selection-start-line="201" selection-start-column="11" selection-end-line="201" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/api/PullCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="205" column="21" selection-start-line="205" selection-start-column="11" selection-end-line="205" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/project.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        <state relative-caret-position="1264">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/Main.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="209">
+          <caret line="3095" column="24" selection-start-line="3095" selection-start-column="24" selection-end-line="3095" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="308" column="74" lean-forward="true" selection-start-line="308" selection-start-column="74" selection-end-line="308" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/MainView.java" />
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/collections/ObservableList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/jfxrt.jar!/javafx/animation/Timeline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/beans/value/WritableObjectValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/javafx/tk/quantum/GlassViewEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="379" selection-start-line="379" selection-end-line="379" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/control/MultipleSelectionModelBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="392" selection-start-line="392" selection-end-line="392" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/AccessibleAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2256">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/LogFilterMyCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/ProjectCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/control/ListCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/beans/value/ChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/beans/value/ObservableValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/collections/FXCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="338" column="40" selection-start-line="338" selection-start-column="40" selection-end-line="338" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/Parent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="724" column="23" selection-start-line="724" selection-start-column="23" selection-end-line="724" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/diff/DiffEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="455" column="21" selection-start-line="455" selection-start-column="11" selection-end-line="455" selection-end-column="21" />
+          <folding>
+            <element signature="e#13797#13798#0" expanded="true" />
+            <element signature="e#13821#13822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/5.1.3.201810200350-r/e24ee2b721040edbb8520d705607a7f7bafd64/org.eclipse.jgit-5.1.3.201810200350-r-sources.jar!/org/eclipse/jgit/revwalk/RevCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="703" column="18" selection-start-line="703" selection-start-column="18" selection-end-line="703" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MainView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/work/project/JsonProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/control/ListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="457" column="43" selection-start-line="457" selection-start-column="43" selection-end-line="457" selection-end-column="43" />
+          <folding>
+            <element signature="e#17232#17233#0" expanded="true" />
+            <element signature="e#17274#17275#0" expanded="true" />
+            <element signature="e#17765#17766#0" expanded="true" />
+            <element signature="e#17822#17823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/src/main/java/com/cn/sleep/RrpositoryTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/GitMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cn/sleep/Ui/JavaFx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="80" column="15" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
         </state>
       </provider>
     </entry>

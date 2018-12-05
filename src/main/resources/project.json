@@ -77,7 +77,7 @@
 					"url":"git@gitlab.com:cfcc123/ICloudClassroomDev.git"
 				}
 			],
-			"control":false
+			"control":true
 		},
 		{
 			"path":"E:\\intellijWorkSpace\\ICloudCourse\\.git",
@@ -92,7 +92,7 @@
 					"url":"git@gitlab.com:cfcc123/ICloudCourse.git"
 				}
 			],
-			"control":false
+			"control":true
 		},
 		{
 			"path":"E:\\intellijWorkSpace\\ICloudRecordPlay\\.git",
@@ -137,7 +137,7 @@
 					"url":"git@gitlab.com:cfcc123/ICloudUser.git"
 				}
 			],
-			"control":false
+			"control":true
 		},
 		{
 			"path":"E:\\intellijWorkSpace\\IntelligentClassroom\\.git",
@@ -152,7 +152,7 @@
 					"url":"git@gitlab.com:cfcc123/IntelligentClassroom.git"
 				}
 			],
-			"control":false
+			"control":true
 		},
 		{
 			"path":"E:\\intellijWorkSpace\\jgit-cookbook\\.git",
@@ -189,7 +189,7 @@
 					"url":"git@gitlab.com:cfcc123/lzroominteractionapi.git"
 				}
 			],
-			"control":false
+			"control":true
 		},
 		{
 			"path":"E:\\intellijWorkSpace\\lzroominteractionservice\\.git",
@@ -219,7 +219,7 @@
 					"url":"git@gitlab.com:cfcc123/lztransferinterface.git"
 				}
 			],
-			"control":false
+			"control":true
 		},
 		{
 			"path":"E:\\intellijWorkSpace\\My-Blog\\.git",

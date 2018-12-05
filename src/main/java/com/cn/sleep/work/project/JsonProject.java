@@ -5,6 +5,7 @@ import com.cn.sleep.work.Project;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class JsonProject implements Project {
 
@@ -58,7 +59,18 @@ public class JsonProject implements Project {
 
     @Override
     public boolean equals(Object obj) {
+        if (Objects.isNull(obj)) {
+            return false;
+        }
         Project project = (Project) obj;
-        return this.getName().equals(project.getName());
+        return this
+                .getName()
+                .equals(project.getName()) &&
+                path.equals(project.getName());
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 }

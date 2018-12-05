@@ -4,10 +4,17 @@ import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.PullResult;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.errors.IncorrectObjectTypeException;
+import org.eclipse.jgit.errors.MissingObjectException;
+import org.eclipse.jgit.errors.StopWalkException;
 import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevWalk;
+import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
+import org.eclipse.jgit.transport.PushResult;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,6 +47,7 @@ public class RrpositoryTool {
         }
     }
 
+
     public static void openGit(String path, GitOpenBack back) {
         try (Git git = new Git(buildRep(path))) {
 
@@ -68,6 +76,14 @@ public class RrpositoryTool {
 
     public PullResult pull(String remote, String branchName) throws GitAPIException {
         return git.pull().setRemote(remote).setRemoteBranchName(branchName).call();
+    }
+
+    public Iterable<PushResult> push(String remote) throws GitAPIException {
+        return git.push().setRemote(remote).call();
+    }
+
+    public Iterable<RevCommit> log(RevFilter revFilter) throws GitAPIException {
+        return git.log().setRevFilter(revFilter).call();
     }
 
     public interface GetNameCallBack {
