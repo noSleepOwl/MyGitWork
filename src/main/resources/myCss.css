@@ -1,0 +1,30 @@
+/*hover伪类选择器设置鼠标移过Button时的背景色*/
+.button:hover {
+    -fx-background-color: lightskyblue;
+}
+
+.tab:hover {
+    -fx-background-color: lightskyblue;
+    -fx-white-space: normal nowrap
+}
+
+/*root类选择器给所有的元素设置样式*/
+.root {
+    -fx-font-family: "微软雅黑";
+    -fx-font-size: 10px;
+    /*-fx-background-image: url(images/background.png);*/
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+
+.main-list-view .list-cell {
+    -fx-text-fill: #292e34;
+    -fx-font-family: Arial;
+    -fx-pref-height: 20px;
+}
+
+.main-list-view .list-cell .label {
+    -fx-border-width: 2px;
+    -fx-border-color: #0c7498;
+    -fx-background-color: #109893;
+}

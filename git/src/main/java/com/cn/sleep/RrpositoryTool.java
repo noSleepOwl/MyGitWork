@@ -1,17 +1,14 @@
 package com.cn.sleep;
 
 import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.api.ListBranchCommand;
 import org.eclipse.jgit.api.PullResult;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
-import org.eclipse.jgit.errors.IncorrectObjectTypeException;
-import org.eclipse.jgit.errors.MissingObjectException;
-import org.eclipse.jgit.errors.StopWalkException;
 import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.transport.PushResult;
@@ -48,14 +45,19 @@ public class RrpositoryTool {
     }
 
 
-    public static void openGit(String path, GitOpenBack back) {
+    public static void openGitThread(String path, GitOpenBack back) {
+        new Thread(() -> {
+            openGit(path, back);
+        }).start();
+    }
+
+    public static <T> T openGit(String path, GitOpenBack<T> back) {
         try (Git git = new Git(buildRep(path))) {
-
-            back.call(new RrpositoryTool(git));
-
+            return back.call(new RrpositoryTool(git));
         } catch (IOException | GitAPIException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
 
@@ -86,12 +88,21 @@ public class RrpositoryTool {
         return git.log().setRevFilter(revFilter).call();
     }
 
+    public List<Ref> branchAllList() throws GitAPIException {
+        return git.branchList().setListMode(ListBranchCommand.ListMode.ALL).call();
+    }
+
+    public List<Ref> branchRemoteList() throws GitAPIException {
+        return git.branchList().setListMode(ListBranchCommand.ListMode.REMOTE).call();
+    }
+
     public interface GetNameCallBack {
         void call(String name, String url);
     }
 
-    public interface GitOpenBack {
-        void call(RrpositoryTool tool) throws GitAPIException;
+
+    public interface GitOpenBack<T> {
+        T call(RrpositoryTool tool) throws GitAPIException;
     }
 
 }

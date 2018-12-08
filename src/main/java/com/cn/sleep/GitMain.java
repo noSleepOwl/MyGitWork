@@ -4,13 +4,19 @@ import com.cn.sleep.work.LogFilterMyCommit;
 import com.cn.sleep.work.Origin;
 import com.cn.sleep.work.Project;
 import com.cn.sleep.work.project.JsonProjectTools;
+import org.apache.log4j.chainsaw.Main;
 import org.eclipse.jgit.api.PullResult;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.PersonIdent;
+import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.RevCommit;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class GitMain {
     public static final String gitDir = "E:\\intellijWorkSpace\\My-Blog";
@@ -20,9 +26,17 @@ public class GitMain {
     public static final String REMOTE_ORIGIN = "origin";
 
     public static void main(String[] arg) {
-        JsonProjectTools.searchProjectFromJson(CONFIG_JSON);
+
         List<Project> projects = JsonProjectTools.build(CONFIG_JSON);
 
+    }
+
+    public static void searchProjectFromJson() {
+        JsonProjectTools.searchProjectFromJson(CONFIG_JSON);
+    }
+
+    public static List<Project> getPorjects() {
+        return JsonProjectTools.build(CONFIG_JSON);
     }
 
     private static String remote(Project project, String remoteName) {
@@ -34,19 +48,17 @@ public class GitMain {
                 .get();
     }
 
-
     public static String logMessage(RevCommit revCommit) {
         PersonIdent committer = revCommit.getCommitterIdent();
         String user = committer.getName();
         String msg = revCommit.getFullMessage().replace("\n", "").trim();
         String when = new SimpleDateFormat("yyyy年MM月dd日hh点").format(committer.getWhen());
         String email = committer.getEmailAddress();
-
         return String.format("\n\n%-25s%-20s%-18s\n       %s", when, user, email, msg);
     }
 
     public static void pullCenterToMaster(Project project) {
-        new Thread(()-> RrpositoryTool.openGit(project.getPath(), tool -> {
+        RrpositoryTool.openGit(project.getPath(), tool -> {
 
             List<DiffEntry> entryList = tool.diff();
             //本地无更改
@@ -55,7 +67,25 @@ public class GitMain {
                 tool.pull(REMOTE_CENTER, MASTER);
                 tool.push(REMOTE_ORIGIN);
             }
+            return null;
+        });
+    }
 
-        })).start();
+    public static void openGitThread(Project project, RrpositoryTool.GitOpenBack back) {
+        RrpositoryTool.openGitThread(project.getPath(), back);
+    }
+
+    public static void openGit(Project project, RrpositoryTool.GitOpenBack back) {
+        RrpositoryTool.openGit(project.getPath(), back);
+    }
+
+    public static Map<String, List<Path>> branchListAll(Project project) {
+        List<Ref> refs = RrpositoryTool.openGit(project.getPath(), RrpositoryTool::branchAllList);
+        for (Ref ref : refs) {
+            System.out.println(ref.getName());
+        }
+        return refs.stream().map(o -> Paths.get(o.getName()))
+                .collect(Collectors.groupingBy(o -> o.getName(2).toString()));
+
     }
 }

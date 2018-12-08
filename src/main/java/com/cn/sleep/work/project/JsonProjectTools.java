@@ -89,15 +89,6 @@ public class JsonProjectTools {
     }
 
     private void setProjectJson(List<Project> projects) {
-        projects = projects
-                .stream()
-                .filter(o -> parseResult.stream().noneMatch(pro -> pro.equals(o)))
-                .map(o -> {
-                    o.setControl(false);
-                    return o;
-                })
-                .collect(Collectors.toList());
-        projects.addAll(parseResult);
         String projectsJson = JSON.toJSONString(projects);
 
         JSONArray projectsJsonObject = JSON.parseArray(projectsJson);
