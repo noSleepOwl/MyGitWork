@@ -53,8 +53,16 @@
             <items>
                 <BorderPane minHeight="0.0" minWidth="0.0">
                     <center>
-                        <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+                        <ListView fx:id="submitView" prefHeight="200.0" prefWidth="200.0"
+                                  BorderPane.alignment="CENTER"/>
                     </center>
+                    <top>
+                        <ToolBar minWidth="20.0" prefHeight="30.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+                            <items>
+                                <ComboBox fx:id="branchComboBox" prefWidth="150.0"/>
+                            </items>
+                        </ToolBar>
+                    </top>
                 </BorderPane>
                 <BorderPane minHeight="0.0" minWidth="0.0">
                     <center>
@@ -66,7 +74,6 @@
                                 <Button mnemonicParsing="false" text="Button"/>
                                 <ComboBox/>
                                 <ComboBox/>
-
                             </items>
                         </ToolBar>
                     </bottom>

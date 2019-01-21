@@ -4,8 +4,6 @@ import com.cn.sleep.work.LogFilterMyCommit;
 import com.cn.sleep.work.Origin;
 import com.cn.sleep.work.Project;
 import com.cn.sleep.work.project.JsonProjectTools;
-import org.apache.log4j.chainsaw.Main;
-import org.eclipse.jgit.api.PullResult;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.lib.Ref;
@@ -24,6 +22,8 @@ public class GitMain {
     public static final String MASTER = "master";
     public static final String REMOTE_CENTER = "center";
     public static final String REMOTE_ORIGIN = "origin";
+    public static final String REMOTE_CENTER_MASTER = "center/master";
+
 
     public static void main(String[] arg) {
 
@@ -65,7 +65,7 @@ public class GitMain {
             if (entryList == null || entryList.size() == 0) {
                 tool.checkout(MASTER);
                 tool.pull(REMOTE_CENTER, MASTER);
-                tool.push(REMOTE_ORIGIN);
+                tool.push(REMOTE_ORIGIN, MASTER);
             }
             return null;
         });
@@ -88,4 +88,21 @@ public class GitMain {
                 .collect(Collectors.groupingBy(o -> o.getName(2).toString()));
 
     }
+
+
+    public static Iterable<RevCommit> localNoCommit(Project project) {
+        return RrpositoryTool.openGit(project.getPath(), tool -> {
+            LogFilterMyCommit revFilter = new LogFilterMyCommit();
+
+            tool.fetch(REMOTE_CENTER);
+            // 本地我的提交
+            Iterable<RevCommit> localCommit = tool.log(revFilter);
+            revFilter.setLocalCommit(localCommit);
+            // center 中我的提交
+            Iterable<RevCommit> centerCommit = tool.log(REMOTE_CENTER_MASTER, revFilter);
+            return centerCommit;
+        });
+    }
+
+
 }

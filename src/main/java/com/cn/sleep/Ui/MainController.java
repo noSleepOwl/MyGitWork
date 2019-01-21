@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import org.eclipse.jgit.revwalk.RevCommit;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -19,6 +20,12 @@ import java.util.List;
 import java.util.Map;
 
 public class MainController {
+    @FXML
+    private ComboBox branchComboBox;
+
+    @FXML
+    private ListView submitView;
+
     @FXML
     private BorderPane baseLayout;
 
@@ -31,13 +38,10 @@ public class MainController {
         projectListView.setCellFactory(view -> {
             CheckBox checkBox = new CheckBox();
             Label label = new Label("测试标签");
-
             HBox hBox = new HBox();
             hBox.getChildren().addAll(checkBox, label);
 
-
             ProjectListCell projectListCell = new ProjectListCell(hBox);
-
             checkBox.selectedProperty().addListener((value, old, now) -> {
                 projectListCell.setCheck(now);
             });
@@ -47,6 +51,7 @@ public class MainController {
 
         projectListView.getSelectionModel().selectedItemProperty().addListener((view, old, now) -> {
             Platform.runLater(() -> createLabel(now));
+            Platform.runLater(() -> loadNotInCenter(now));
         });
 
         projectListView.setItems(projects);
@@ -54,8 +59,14 @@ public class MainController {
 
     }
 
+    private void loadNotInCenter(Project now) {
+        Iterable<RevCommit> commits = GitMain.localNoCommit(now);
+        commits.forEach(o -> {
+            System.out.println(o.getFullMessage());
+        });
+    }
+
     private void createLabel(Project now) {
-        baseLayout.setCenter(null);
 
         TabPane tabPane = new TabPane();
         tabPane.setSide(Side.TOP);
@@ -93,13 +104,11 @@ public class MainController {
 
 
             vBox.getChildren().addAll(labels);
-
             tab.setContent(vBox);
             tabPane.getTabs().add(tab);
         }
 
 
-        baseLayout.setCenter(tabPane);
     }
 
 

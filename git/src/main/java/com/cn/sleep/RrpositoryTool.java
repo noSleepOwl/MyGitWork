@@ -11,6 +11,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
+import org.eclipse.jgit.transport.FetchResult;
 import org.eclipse.jgit.transport.PushResult;
 
 import java.io.File;
@@ -80,12 +81,19 @@ public class RrpositoryTool {
         return git.pull().setRemote(remote).setRemoteBranchName(branchName).call();
     }
 
-    public Iterable<PushResult> push(String remote) throws GitAPIException {
-        return git.push().setRemote(remote).call();
+    public Iterable<PushResult> push(String remote, String branchName) throws GitAPIException {
+        return git.push().setRemote(remote).add(branchName).call();
     }
 
     public Iterable<RevCommit> log(RevFilter revFilter) throws GitAPIException {
         return git.log().setRevFilter(revFilter).call();
+    }
+
+    /**
+     * 输出指定分支路径的
+     */
+    public Iterable<RevCommit> log(String branchPath, RevFilter revFilter) throws GitAPIException {
+        return git.log().addPath(branchPath).setRevFilter(revFilter).call();
     }
 
     public List<Ref> branchAllList() throws GitAPIException {
@@ -95,6 +103,11 @@ public class RrpositoryTool {
     public List<Ref> branchRemoteList() throws GitAPIException {
         return git.branchList().setListMode(ListBranchCommand.ListMode.REMOTE).call();
     }
+
+    public FetchResult fetch(String remote) throws GitAPIException {
+        return git.fetch().setRemote(remote).call();
+    }
+
 
     public interface GetNameCallBack {
         void call(String name, String url);
